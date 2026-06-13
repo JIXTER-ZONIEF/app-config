@@ -1,6 +1,6 @@
 {
-  "minSupportedBuild": 1,
-  "latestBuild": 222,
+  "minSupportedBuild": 223,
+  "latestBuild": 225,
   "androidStoreUrl": "https://play.google.com/store/apps/details?id=com.zonief.espritfrancais",
   "iosStoreUrl": "https://apps.apple.com/app/id6761381363",
   "forceUpdate": false,
