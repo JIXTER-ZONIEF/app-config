@@ -1,9 +1,9 @@
 {
   "minSupportedBuild": 1,
-  "latestBuild": 1,
+  "latestBuild": 31,
   "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.objectifgardien",
-  "iosStoreUrl": null,
-  "forceUpdate": false,
+  "iosStoreUrl": "https://apps.apple.com/app/id6775963412",
+  "forceUpdate": true,
   "message": {
     "fr": "Une nouvelle version est requise pour continuer. Merci de mettre à jour l'application.",
     "en": "A new version is required to continue. Please update the app.",
