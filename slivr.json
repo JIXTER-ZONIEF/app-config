@@ -3,7 +3,7 @@
   "latestBuild": 15,
   "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.slivr",
   "iosStoreUrl": "https://apps.apple.com/app/id6778009017",
-  "forceUpdate": true,
+  "forceUpdate": false,
   "message": {
     "fr": "Une nouvelle version est requise pour continuer. Merci de mettre à jour l'application.",
     "en": "A new version is required to continue. Please update the app.",
