@@ -12,11 +12,19 @@ Chaque app lit `https://raw.githubusercontent.com/JIXTER-ZONIEF/app-config/main/
 | `latestBuild` | int | Dernier build publié (info). |
 | `androidStoreUrl` / `iosStoreUrl` | string\|null | Liens store (bouton de l'écran de blocage). |
 | `forceUpdate` | bool | Kill-switch : force la MAJ même au-dessus du seuil tant que `buildNumber < latestBuild`. **⚠️ iOS : voir garde-fou ops#765 ci-dessous avant de remettre à `true`.** |
-| `message` | {fr,en,es} | Message affiché (fallback intégré côté app). |
+| `message` | {fr,en,es,zh…} | Message affiché (fallback intégré côté app). **Une clé par langue réellement livrée par l'app** (cf garde-fou ci-dessous). |
 
 ## Pour forcer une montée de version
 
 Relever `minSupportedBuild` au `buildNumber` minimal acceptable, commit + push. Effet en quelques minutes (cache CDN GitHub ~5 min). **Fail-open** : si le manifeste est injoignable, l'app ne bloque pas.
+
+## ⚠️ Garde-fou `message` : une clé par langue livrée (ops#934)
+
+`message` doit porter **une clé par langue que l'app livre réellement** (ses `.arb` / `assets/translations` / `supportedLocales`). Le client ne réclame que la langue dans laquelle l'app s'affiche, et `UpdateGateService` retombe sur `en` si la clé manque : une langue livrée sans clé ici, c'est l'**unique écran non-dismissible de l'app affiché en anglais** à un utilisateur qui ne le lit pas, et un blocage explicable devient une app qui ne démarre plus.
+
+Vécu (ops#934) : les 4 apps qui livrent le chinois (`slivr`, `trace`, `dailypull`, `harmonikeys`) n'avaient que `fr/en/es`, alors que `zh-Hans` est annoncé publiquement sur l'App Store (ops#907/#927).
+
+Contrôle automatique : `~/.claude/scripts/check-update-gate-floors.py` (cron 6 h) compare les langues livrées par chaque app à ses clés `message` et alerte sur tout manque.
 
 ## ⚠️ Garde-fou `forceUpdate` (ops#765)
 

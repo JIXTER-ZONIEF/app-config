@@ -7,6 +7,7 @@
   "message": {
     "fr": "Une nouvelle version est requise pour continuer. Merci de mettre à jour l'application.",
     "en": "A new version is required to continue. Please update the app.",
-    "es": "Se requiere una nueva versión para continuar. Actualice la aplicación."
+    "es": "Se requiere una nueva versión para continuar. Actualice la aplicación.",
+    "zh": "需要更新到新版本才能继续使用，请更新应用。"
   }
 }
