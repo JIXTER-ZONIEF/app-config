@@ -37,3 +37,9 @@ Le fix code (exemption iOS dans `UpdateGateService.shouldBlock`) est sur `develo
 2. sinon, laisser `forceUpdate: false` et s'appuyer uniquement sur `minSupportedBuild` (plancher dur, précis, sans risque de brick) pour forcer une montée.
 
 Le nudge `forceUpdate`/`latestBuild` n'a de valeur que côté **Android** (iOS ne reçoit pas le dernier build de façon garantie). En pratique, `minSupportedBuild` suffit pour forcer une montée de version.
+
+## `saisons.json` : saisons visuelles (ops#2953)
+
+Pilote sans release les saisons visuelles de toutes les surfaces (apps et sites) : couper, décaler ou forcer une saison par surface. Le calendrier est compilé dans chaque surface ; ce manifeste est lu en **fail-open** (absent, illisible ou `schema` inconnu : le calendrier compilé fait foi) et ne choisit que parmi des visuels déjà livrés. Format, noms de surface et exemples : dépôt `JIXTER-ZONIEF/jixter-saisons`, README.
+
+Vide (`"surfaces": {}`), il laisse toutes les surfaces sur le calendrier compilé.
