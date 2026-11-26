@@ -1,0 +1,11 @@
+{
+  "minSupportedBuild": 1,
+  "latestBuild": 6,
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.clairiere",
+  "iosStoreUrl": "https://apps.apple.com/app/id6820438497",
+  "forceUpdate": false,
+  "message": {
+    "fr": "Une nouvelle version de Clairière est nécessaire pour continuer. Mets l'app à jour depuis le store.",
+    "en": "A new version of Clairière is required to continue. Please update the app from the store."
+  }
+}

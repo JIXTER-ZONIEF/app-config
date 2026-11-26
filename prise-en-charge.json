@@ -1,0 +1,10 @@
+{
+  "minSupportedBuild": 1,
+  "latestBuild": 5,
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.priseencharge",
+  "iosStoreUrl": "https://apps.apple.com/app/id6838450203",
+  "forceUpdate": false,
+  "message": {
+    "fr": "Une nouvelle version de Prise en charge est nécessaire pour continuer. Mettez l'app à jour depuis le store."
+  }
+}

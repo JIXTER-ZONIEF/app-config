@@ -1,0 +1,10 @@
+{
+  "minSupportedBuild": 1,
+  "latestBuild": 14,
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.educationchiot",
+  "iosStoreUrl": "https://apps.apple.com/app/id6817667907",
+  "forceUpdate": false,
+  "message": {
+    "fr": "Une nouvelle version de Chiot est nécessaire pour continuer. Mettez l'app à jour depuis le store."
+  }
+}

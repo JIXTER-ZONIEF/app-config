@@ -1,0 +1,10 @@
+{
+  "minSupportedBuild": 1,
+  "latestBuild": 10,
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.dictee",
+  "iosStoreUrl": "https://apps.apple.com/app/id6817667692",
+  "forceUpdate": false,
+  "message": {
+    "fr": "Une nouvelle version de Dictée est nécessaire pour continuer. Mettez l'app à jour depuis le store."
+  }
+}
