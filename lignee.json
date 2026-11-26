@@ -1,0 +1,10 @@
+{
+  "minSupportedBuild": 1,
+  "latestBuild": 7,
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=fr.jixter.lignee",
+  "iosStoreUrl": "https://apps.apple.com/app/id6823347236",
+  "forceUpdate": false,
+  "message": {
+    "fr": "Une nouvelle version de Lignée est nécessaire pour continuer. Mets l'app à jour depuis le store."
+  }
+}
